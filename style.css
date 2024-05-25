@@ -1,0 +1,108 @@
+*{
+    /* مشان اخلي النص يرجع لاصلو بدون اي تعديلات من جوجل واقدر اعدل علي زي ما بدي انا */
+
+    margin: 0;
+    padding: 0;
+}
+
+
+/*  مشان اعمل لون الخلفية موحده للموقع* واعمل كمان خط موحد لكل شي في الموقع */
+body{
+
+background: #ffffff;
+color: #650c83;
+font-family:Tahoma ;
+}
+
+/*  بدي اخلي الموقع تاعي في النص بالزبط يعني في فراغات ع الجوانب مشان يكون ارتب  */
+.NermeenSahury{
+    width: 80%; 
+   margin: auto; /*هاي مشان يبعد عن الشمال ويصير الموقع كل الكلام الي فيه في النص */
+}
+
+/*headتنسيق ال */
+.head{
+   text-align:center;   /*بدي الكلام الي فيها يكون في النص */
+    text-transform: uppercase ; /*وبدي الحروف كلها فيها تكون كلياتها كبيرة */
+ margin: 10px 0;
+}
+
+input{
+width: 100%;  
+height:40px ; 
+outline: none;
+border:none;
+background:#433f45 ;
+margin: 4px 0;
+border: radius 4px; /*هاي مشان اعمل اقواس حول البوكس الي بدي اكتب فيه */
+padding: 4px;
+color: #ffffff;/*هون مشان الكتابة داخل الصندوق تكون ابيض */
+}
+
+/*هون اذا عمل فوكس بخلي اللون اغمق شوي مشان احدد انا وين*/
+input:focus{
+background: #222;
+transform: scale(1.1);/*  هاي مشان اخلي الصندوق يتكبر شوي مشان يكون اوضح للمستخدم لما بدو يكتب جواتو*/
+}
+
+.price input{
+    width :20%;
+}
+
+/* يكونو جنب بعض  على الواجهة لpriceهون مشان اخلي كل مكونات  */
+.price{
+     height:20%;
+    
+
+}
+
+/*  جيبو الي وعدل عليه  totalالي اسمو  idهسا هون ال  */
+#Total{
+    background:#a883b1;
+    padding: 4px 2px;
+    border-radius: 4px;
+}
+
+#Total::before{
+    content:'Total:';
+}
+
+/*هون بدي اجيب كل الازرار الي في المشروع واعدل عليها نفس التعديل */
+button{
+    width: 100%;
+    height: 30px;
+   border: none; /*هون بدي اشيل البوردر عن الزر*/
+cursor: pointer;  /*هون بدي شكل الماوس لما ييجي عليها يكون  بشكل اليد */
+background:#650c83 ;
+color: #ffffff;
+border-radius: 20px; 
+transition: 0.5s;/*    يبطئ ظهور الفراغ بينهن  buttonمشان لما ييجي المؤشر على زر */
+}
+
+button:hover{
+    background:#ad57c9 ;  /*  يصير بلون افتحcreatهون لما ييجي المؤشر غلى كلمة  */
+    letter-spacing: 2px;/*  لما المؤشر ييجي عليهcreatهاي مشان اخلي فراغ يصير بين الاحرف لكلمة */
+
+}
+
+.btnsearch{
+    display: flex;
+    justify-content: space-between;/* عملت مسافة بين الازرار*/
+}
+
+.btnsearch button{
+    width: 45%;
+
+}
+
+
+.table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0 ;
+}
+
+table th{
+    text-transform: uppercase;
+}
+
