@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NermeenSahury</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>  
+<body>
+    <!--الاساسي  لdivاول شي رح اقسم المشروع ل3 اجزاء داخل   -->
+
+    <div  class="NermeenSahury">
+    <div class="head">
+        <h2>Managing an electronic devices store   </h2>
+        <p>Product management system </p>
+
+    </div>
+
+
+    <div class="inputs">
+    <!--  مشان اقدر انادي عليه في الجافا سكريبتidرح اعملل   1`و    -->
+       <input  placeholder="title" type="text" id="title">  <!--    placeholder هاي مشان يكتب الجملة تايتل بشكل شفاف داخل الصندوق    -->
+    <!-- جديدة للسعر مشان اضم فيها كل الي جنبها والي بخص السعر والخصم وما الى ذلك divهسا هون بدي اعمل  -->
+         <div class="price">
+            <input onkeyup="getTotal()" type="number" id="price" placeholder="price">
+            <input onkeyup="getTotal()" type="number" id="taxes" placeholder="taxes">
+            <input onkeyup="getTotal()" type="number" id="ads" placeholder="ads">
+            <input onkeyup="getTotal()" type="number" id="discount" placeholder="discount">
+            
+            <!--  onkeyup="getTotal()" input الفنكشن بتعمل انو لما اكتب هاي الاربع 
+                total جوات المربعات الخاصة فيها يطلع  تلقائيا-->
+    
+            <small id="Total"></small>
+            <!--هاي السمول مشان اعمل توتال   والارقام 123 الي فيها مشان اعمل شكل تخيلي للبيانات الي رح توصل للجافا سكريبت-->
+         </div>
+         
+         <input type="number" id="count"  placeholder="count" >
+         <input type="text" id="category"  placeholder="category" >
+         <button id="submit">Creat</button>
+
+
+    </div>
+
+
+
+    <div class="outputs">
+      <div class="search"></div>  
+      <input  onkeyup="searchdata(this.value)"  type="text" id="search"  placeholder="search" >
+      
+      <div class="btnsearch"> 
+        <button onclick=" getsearchmood(this.id)"   id="searchtitle">SearchByTitle</button>
+        <button onclick=" getsearchmood(this.id)"   id="searccategory">SearchByCategory</button>
+
+      </div>
+
+      <style>
+        table {
+            line-height: 4; /* زيادة المسافة بين الأسطر */
+
+            padding: 20px; /* تعيين قيمة المساحة الداخلية */
+
+            border-collapse: collapse; /* دمج حدود الخلايا */
+        width: 100%; /* تعيين عرض الجدول بنسبة 100% */
+    }
+
+    th, td {
+        border: 1px solid #ad57c9; /* تحديد حدود الخلايا */
+        padding: 10px; /* تعيين قيمة المساحة الداخلية */
+    }
+
+
+    </style>
+    
+    <table>
+        <tr>
+            <td>ID</td>
+            <td>Title</td>
+            <td>Price</td>
+            <td>Taxes</td>
+            <td>ADS</td>
+            <td>Discount</td>
+            <td>Total</td>
+            <td>Category</td>
+            <td>Update</td>
+            <td>Delete</td>
+        </tr>
+ 
+
+    <tbody id="tbody">
+        
+
+
+    </tbody>
+   </table>
+ 
+
+    </div>
+
+    </div>
+  <script src="main.js"></script>
+</body>
+</html>
